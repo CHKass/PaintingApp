@@ -1,0 +1,2 @@
+# PaintingApp
+Generating random paintings
