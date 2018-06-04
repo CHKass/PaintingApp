@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="canvas.css">
+        
+        
+        <title>Random Print</title>
+    </head>
+
+    <body>
+        
+            <div class="wrapper" id="wrap2pdf">
+                <div id="HTMLtoPDF">
+                    <div class="canvas" id="canva">
+                        <div class="bar-one" id="bar-0"></div>
+                        <div class="bar-two" id="bar-1"></div>
+                        <div class="bar-three" id="bar-2"></div>
+                        <div class="bar-four" id="bar-3"></div>
+                        <div class="bar-five" id="bar-4"></div>
+                    </div>
+                </div>
+
+                <div class="instructions"><p class="backlink"><a href="#">Primitive Print Generator</a></p>
+                    <p class="body">The purpose here is to generate random coloured bars on a 'canvas'. Clicking the START button will run the process and generate a 'print'. It is possible to run the sequence any number of times and get completely different finished prints or 'paintings'. Clicking the SAVE button will save the page as a png file, and the CLEAR button will revert to a blank canvas.</p>
+                    <p class="body">My intention is to create a number of painted images, and randomness is a key part of the process. I have created this app to help with this aspect. A by-product is the generation of 'prints' which exist as artworks in their own right. For those who wish to actually paint one of the resulting images the colour code and depth for each of the bars are listed below the buttons.</p>
+                
+                    <div class="btn-wrapper">
+                        <button class="btn-compose">START</button>
+                <!-- SAVE button runs myFuntion in the js file to create a pdf and save it to the user's computer -->
+                        <button class="btn-save">SAVE</button>
+                        <script>
+                            document.querySelector('.btn-save').addEventListener('click', myFunction);
+                                function myFunction(){
+                                    if  (event.key === (91, 16, 51));
+                                        alert('There is a problem saving your screenshot.\nPlease press \(cmd+shift+4\) to select exactly the area you wish to save as a png.');
+                                        return true;
+                                }
+                        </script>
+
+                <!-- CLEAR Button clears the last composed colours and the innerHTML but does not refreah -->
+                       <button class="btn-clear">CLEAR</button>
+                    </div>
+                    
+                    <div class="col2" id="colcol">
+                            <p class="subhead">Colour (Hexadecimal)</p>   
+                            <div class="bar-color" id="color-0">#962f34</div>
+                            <div class="bar-color" id="color-1">#004023</div>
+                            <div class="bar-color" id="color-2">#0a4159</div>
+                            <div class="bar-color" id="color-3">#9b6c21</div>
+                            <div class="bar-color" id="color-4">#724f10</div>
+                    </div>
+                    
+                    <div class="col3" id="colsiz">
+                            <p class="subhead">Size (%)</p>
+                            <div class="bar-size" id="size-0">100</div>
+                            <div class="bar-size" id="size-1">80</div>
+                            <div class="bar-size" id="size-2">90</div>
+                            <div class="bar-size" id="size-3">60</div>
+                            <div class="bar-size" id="size-4">68</div>                
+                    </div> 
+
+                    <div> <p class="backlink">Alternate options</p>
+                        <p class="body">The Primitive version uses a five colour palette plus 'no colour', as the six available options. Click one of the other options below, to create versions with added colours.</p>
+                    
+                        <div class="btn-wrapper">
+                            <button class="btn-options"><a href="index.html">Primitive</a></button>
+                            <button class="btn-options"><a href="basecamp.html">Base Camp</a></button>
+                           <button class="btn-options"><a href="altitude.html">Altitude</a></button>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+                
+
+        
+        <script src="canvasA.js"></script>
+        <!-- <script src="./app/jsPDF-1.3.2/jspdf.js"></script>
+        <script src="./node_modules/jquery/dist/jquery.js"></script>
+        <script src="./node_modules/webshot/webshot.js"></script> -->
+        
+        
+    </body>
+</html>
